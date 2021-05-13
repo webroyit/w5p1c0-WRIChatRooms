@@ -6,6 +6,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchIcon from '@material-ui/icons/Search';
 
 import './Sidebar.css';
+import SidebarChat from './SidebarChat';
 
 function Sidebar() {
     return (
@@ -31,7 +32,14 @@ function Sidebar() {
                 </div>
             </div>
             <div className="sidebar__chats">
-                
+                <SidebarChat />
+                <SidebarChat />
+                <SidebarChat />
+                <SidebarChat />
+                <SidebarChat />
+
+                <SidebarChat />
+                <SidebarChat />
             </div>
         </div>
     )
