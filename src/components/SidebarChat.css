@@ -3,6 +3,7 @@
     padding: 20px;
     cursor: pointer;
     border-bottom: 1px solid #d8e1e9;
+    background-color: white;
 }
 
 .sidebarChat:hover {
