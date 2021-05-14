@@ -3,6 +3,8 @@ import { Avatar, IconButton } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import MicIcon from '@material-ui/icons/Mic';
 
 import './Chat.css';
 
@@ -57,7 +59,12 @@ function Chat() {
             </div>
 
             <div className="chat__footer">
-
+                <InsertEmoticonIcon />
+                <form>
+                    <input type="text" placeholder="Type a message..." />
+                    <button>Send a message</button>
+                </form>
+                <MicIcon />
             </div>
         </div>
     )
