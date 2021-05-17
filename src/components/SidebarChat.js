@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Avatar } from '@material-ui/core';
 
 import './SidebarChat.css';
+import db from '../firebase';
 
 function SidebarChat({ addNewChat, id, name }) {
     const [seed, setSeed] = useState('');
@@ -15,6 +16,9 @@ function SidebarChat({ addNewChat, id, name }) {
 
         if (roomName) {
             // Firestore
+            db.collection('chatrooms').add({
+                name: roomName
+            })
         }
     }
 
